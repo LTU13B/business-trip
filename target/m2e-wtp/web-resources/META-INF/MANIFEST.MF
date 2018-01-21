@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: business-trip-app
+Implementation-Version: 1.0-SNAPSHOT
+Built-By: Admin
+Implementation-Vendor-Id: com.group1
+Build-Jdk: 1.8.0_151
+Implementation-URL: http://projects.spring.io/spring-boot/business-tri
+ p-app/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

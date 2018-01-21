@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;valo&quot;}">
+  <meta name="vaadin-version" content="8.0.5">
+ </head>
+ <body>
+  <vaadin-vertical-layout size-full>
+   <vaadin-horizontal-layout spacing="false" _id="buttonLayout">
+    <vaadin-button icon="fonticon://Vaadin-Icons/e801" style-name="icon-only" width="50px" height="50px" plain-text _id="addBtn">
+      ADD 
+    </vaadin-button>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e805" style-name="icon-only" width="50px" height="50px" plain-text _id="searchBtn">
+      SEARCH 
+    </vaadin-button>
+   </vaadin-horizontal-layout>
+   <vaadin-grid size-full data-item-type="com.group1.model.Plan" _id="grid" :expand>
+    <table>
+     <colgroup>
+      <col column-id="id" sortable>
+      <col column-id="name" sortable>
+      <col column-id="emp" sortable>
+      <col column-id="createDate" sortable>
+      <col column-id="checkDate" sortable>
+      <col column-id="status" sortable>
+      <col column-id="project" sortable>
+      <col column-id="purpose" sortable>
+      <col column-id="place" sortable>
+      <col column-id="partner" sortable>
+      <col column-id="advanceCost" sortable>
+      <col column-id="advance" sortable>
+      <col column-id="arised" sortable>
+      <col column-id="jobDetails" sortable>
+     </colgroup>
+     <thead>
+      <tr default>
+       <th plain-text column-ids="id">Id</th>
+       <th plain-text column-ids="name">Tên kế hoạch</th>
+       <th plain-text column-ids="emp">Emp</th>
+       <th plain-text column-ids="createDate">CreateDate</th>
+       <th plain-text column-ids="checkDate">CheckDate</th>
+       <th plain-text column-ids="status">Status</th>
+       <th plain-text column-ids="project">Project</th>
+       <th plain-text column-ids="purpose">Purpose</th>
+       <th plain-text column-ids="place">Place</th>
+       <th plain-text column-ids="partner">Partner</th>
+       <th plain-text column-ids="advanceCost">AdvanceCost</th>
+       <th plain-text column-ids="advance">Advance</th>
+       <th plain-text column-ids="arised">Arised</th>
+       <th plain-text column-ids="jobDetails">JobDetails</th>
+      </tr>
+     </thead>
+     <tbody></tbody>
+    </table>
+   </vaadin-grid>
+  </vaadin-vertical-layout>
+ </body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:false,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.0.5">
+ </head>
+ <body>
+  <vaadin-vertical-layout>
+   <vaadin-horizontal-layout style-name="header" width-full height="25px">
+    <vaadin-label caption="THÔNG TIN NHÂN VIÊN" width-full plain-text :expand></vaadin-label>
+   </vaadin-horizontal-layout>
+   <vaadin-form-layout style-name="footer" margin="false">
+    <vaadin-text-field caption="EMP_ID" width="300px" readonly _id="empIdTf"></vaadin-text-field>
+    <vaadin-text-field caption="Họ tên" width="300px" _id="nameTf"></vaadin-text-field>
+    <vaadin-text-field caption="Email" width="300px" _id="emailTf"></vaadin-text-field>
+    <vaadin-text-field caption="Địa chỉ" width="300px" _id="addressTf"></vaadin-text-field>
+    <vaadin-text-field caption="Phone" width="300px" _id="phoneTf"></vaadin-text-field>
+    <vaadin-css-layout caption="Mã chức vụ" style-name="v-component-group" width="300px">
+     <vaadin-text-field width="300px" _id="chucvuIdTf"></vaadin-text-field>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e71e" description="Xem thông tin chức vụ
+" plain-text _id="chucvuInfoBtn"></vaadin-button>
+    </vaadin-css-layout>
+    <vaadin-css-layout caption="Mã phòng" style-name="v-component-group" width="300px">
+     <vaadin-text-field width="300px" _id="groupIdTf"></vaadin-text-field>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e71e" description="Xem thông tin phòng ban" plain-text _id="groupInfoBtn"></vaadin-button>
+    </vaadin-css-layout>
+   </vaadin-form-layout>
+   <vaadin-horizontal-layout width-full>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e7ad" width="120px" plain-text _id="cancelBtn">
+      Cancel 
+    </vaadin-button>
+    <vaadin-css-layout style-name="v-component-group" :right>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e771" width="120px" plain-text _id="editBtn">
+       Sửa 
+     </vaadin-button>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e92a" width="120px" plain-text _id="removeBtn">
+       Xóa 
+     </vaadin-button>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e655" width="120px" plain-text _id="okBtn">
+       OK 
+     </vaadin-button>
+    </vaadin-css-layout>
+   </vaadin-horizontal-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>
