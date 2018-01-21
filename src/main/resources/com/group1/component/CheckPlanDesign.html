@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.0.5">
+ </head>
+ <body>
+  <vaadin-vertical-layout>
+   <vaadin-horizontal-layout style-name="header" width-full height="25px">
+    <vaadin-label caption="THÔNG TIN KẾ HOẠCH" width-full plain-text :expand></vaadin-label>
+   </vaadin-horizontal-layout>
+   <vaadin-vertical-layout primary-style-name="v-verticallayout
+" enabled="false" size-full margin="false">
+    <vaadin-text-field description="Tên kế hoạch" primary-style-name="v-textfield
+" style-name="borderless" placeholder="Tên kế hoạch" width="400px" _id="planNameTf"></vaadin-text-field>
+    <vaadin-text-field description="Mã dự án" primary-style-name="v-textfield
+" style-name="borderless" placeholder="Mã dự án" width="400px" _id="projectIdTf"></vaadin-text-field>
+    <vaadin-horizontal-layout height-full :expand>
+     <vaadin-text-area description="Mục đích" rows="2" style-name="borderless" placeholder="Mục đích" width="400px" _id="planPurposeTa"></vaadin-text-area>
+     <vaadin-text-area description="Địa điểm" rows="2" style-name="borderless" placeholder="Địa điểm" width="400px" _id="planPlaceTa"></vaadin-text-area>
+    </vaadin-horizontal-layout>
+    <vaadin-text-area description="Làm việc với" rows="2" style-name="borderless" placeholder="Làm việc với" width="400px" _id="planPartnerTa"></vaadin-text-area>
+    <vaadin-horizontal-layout spacing="false" width="500px">
+     <vaadin-horizontal-layout style-name="borderless" spacing="false">
+      <vaadin-check-box _id="planAdvanceChbox"></vaadin-check-box>
+      <vaadin-label caption="Ứng trước" plain-text></vaadin-label>
+     </vaadin-horizontal-layout>
+     <vaadin-horizontal-layout spacing="false">
+      <vaadin-check-box _id="planArisedChBox"></vaadin-check-box>
+      <vaadin-label caption="Phát sinh" plain-text></vaadin-label>
+     </vaadin-horizontal-layout>
+    </vaadin-horizontal-layout>
+   </vaadin-vertical-layout>
+   <vaadin-horizontal-layout style-name="header" width-full height="25px">
+    <vaadin-label caption="THÔNG TIN NGƯỜI ĐỀ XUẤT" width-full plain-text :expand></vaadin-label>
+   </vaadin-horizontal-layout>
+   <vaadin-vertical-layout enabled="false" margin="false">
+    <vaadin-horizontal-layout width-full>
+     <vaadin-text-field style-name="borderless" placeholder="Họ tên" width="400px" _id="empNameTf"></vaadin-text-field>
+     <vaadin-text-field style-name="borderless" placeholder="Email
+" width="400px" _id="empEmailTf"></vaadin-text-field>
+    </vaadin-horizontal-layout>
+    <vaadin-text-field description="Chức vụ" style-name="borderless" placeholder="Chức vụ" width="400px" _id="empChucVuTf"></vaadin-text-field>
+   </vaadin-vertical-layout>
+   <vaadin-horizontal-layout style-name="header" width-full height="25px">
+    <vaadin-label caption="CHI TIẾT CÔNG VIỆC" width-full plain-text :expand></vaadin-label>
+   </vaadin-horizontal-layout>
+   <vaadin-vertical-layout style-name="footer" margin="false" _id="jobListLayout">
+    <vaadin-vertical-layout enabled="false" style-name="job-layout-footer" margin="false">
+     <vaadin-horizontal-layout width-full>
+      <vaadin-text-field description="Tên công việc" style-name="borderless" placeholder="Tên công việc"></vaadin-text-field>
+      <vaadin-text-field description="Số lượng" style-name="borderless" placeholder="Số lượng"></vaadin-text-field>
+      <vaadin-text-field icon="fonticon://Vaadin-Icons/e6b6" description="Chi phí đề xuất" style-name="borderless inline-icon" placeholder="Chi phí đề xuất"></vaadin-text-field>
+     </vaadin-horizontal-layout>
+     <vaadin-text-field icon="fonticon://Vaadin-Icons/e7a4" description="Hạn mức" style-name="borderless inline-icon" placeholder="Hạn mức"></vaadin-text-field>
+     <vaadin-css-layout style-name="v-component-group" width-full>
+      <vaadin-button visible="false" icon="fonticon://Vaadin-Icons/e69a" width="50px" plain-text></vaadin-button>
+      <vaadin-text-field placeholder="Tên hóa đơn" width="300px"></vaadin-text-field>
+      <vaadin-text-field placeholder="Thuế" width="200px"></vaadin-text-field>
+      <vaadin-text-field placeholder="Chi phí không thuế" width="200px"></vaadin-text-field>
+     </vaadin-css-layout>
+    </vaadin-vertical-layout>
+   </vaadin-vertical-layout>
+   <vaadin-horizontal-layout width-full>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e7ad" width="120px" plain-text _id="cancelBtn">
+      Hủy bỏ 
+    </vaadin-button>
+    <vaadin-css-layout style-name="v-component-group" :right>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e6db" style-name="icon-align-right" width="120px" plain-text _id="checkBtn">
+       Duyệt 
+     </vaadin-button>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e6da" style-name="icon-align-right" width="160px" plain-text _id="unCheckBtn">
+       Không duyệt 
+     </vaadin-button>
+    </vaadin-css-layout>
+   </vaadin-horizontal-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>

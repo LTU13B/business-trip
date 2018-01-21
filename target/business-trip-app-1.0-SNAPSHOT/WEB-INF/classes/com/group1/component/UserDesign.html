@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.0.5">
+ </head>
+ <body>
+  <vaadin-vertical-layout>
+   <vaadin-horizontal-layout style-name="header" width-full height="25px">
+    <vaadin-label caption="THÔNG TIN USER" width-full plain-text :expand></vaadin-label>
+   </vaadin-horizontal-layout>
+   <vaadin-form-layout style-name="footer" margin="false">
+    <vaadin-text-field caption="User ID" width="300px" readonly _id="userIdTf"></vaadin-text-field>
+    <vaadin-css-layout caption="Mã nhân viên" style-name="v-component-group">
+     <vaadin-text-field width="300px" _id="empIdTf"></vaadin-text-field>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e71c" description="Xem thông tin nhân viên" width="50px" plain-text _id="viewEmpBtn"></vaadin-button>
+    </vaadin-css-layout>
+    <vaadin-text-field caption="Username" width="300px" _id="usernameTf"></vaadin-text-field>
+    <vaadin-text-field caption="Password" width="300px" _id="passTf"></vaadin-text-field>
+    <vaadin-check-box-group caption="Role" style-name="horizontal" data-item-type="java.lang.String" _id="roleChboxGroup">
+     <option item="LEADER">Lãnh đạo</option>
+     <option item="ACCOUNTANT">Kế toán</option>
+     <option item="ADMIN">Admin</option>
+    </vaadin-check-box-group>
+   </vaadin-form-layout>
+   <vaadin-horizontal-layout width-full>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e7ad" width="120px" plain-text _id="cancelBtn">
+      Cancel 
+    </vaadin-button>
+    <vaadin-css-layout style-name="v-component-group" :right>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e771" width="120px" plain-text _id="editBtn">
+       Sửa 
+     </vaadin-button>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e92a" width="120px" plain-text _id="removeBtn">
+       Xóa 
+     </vaadin-button>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e655" width="120px" plain-text _id="okBtn">
+       OK 
+     </vaadin-button>
+    </vaadin-css-layout>
+   </vaadin-horizontal-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.0.5">
+ </head>
+ <body>
+  <vaadin-vertical-layout>
+   <vaadin-horizontal-layout style-name="header" width-full height="25px">
+    <vaadin-label caption="THÔNG TIN CÔNG VIỆC" width-full plain-text :expand></vaadin-label>
+   </vaadin-horizontal-layout>
+   <vaadin-form-layout margin="false">
+    <vaadin-text-field caption="Job ID" width="300px" readonly _id="jobIdTf"></vaadin-text-field>
+    <vaadin-text-field caption="Tên" width="300px" _id="jobNameTf"></vaadin-text-field>
+   </vaadin-form-layout>
+   <vaadin-vertical-layout caption="Hạn mức" style-name="footer" margin="false">
+    <vaadin-button icon="fonticon://Vaadin-Icons/e801" plain-text _id="addLimitCostBtn"></vaadin-button>
+    <vaadin-vertical-layout margin="false" _id="limitCostLayout"></vaadin-vertical-layout>
+   </vaadin-vertical-layout>
+   <vaadin-horizontal-layout width-full>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e7ad" width="120px" plain-text _id="cancelBtn">
+      Cancel 
+    </vaadin-button>
+    <vaadin-css-layout style-name="v-component-group" :right>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e771" width="120px" plain-text _id="editBtn">
+       Sửa 
+     </vaadin-button>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e92a" width="120px" plain-text _id="removeBtn">
+       Xóa 
+     </vaadin-button>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e655" width="120px" plain-text _id="okBtn">
+       OK 
+     </vaadin-button>
+    </vaadin-css-layout>
+   </vaadin-horizontal-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.0.5">
+ </head>
+ <body>
+  <vaadin-vertical-layout size-full>
+   <vaadin-button icon="fonticon://Vaadin-Icons/e801" width="50px" height="50px" plain-text _id="addBtn"></vaadin-button>
+   <vaadin-grid size-full data-item-type="com.group1.model.Job" _id="grid" :expand>
+    <table>
+     <colgroup>
+      <col column-id="id" sortable>
+      <col column-id="name" sortable>
+     </colgroup>
+     <thead>
+      <tr default>
+       <th plain-text column-ids="id">Id</th>
+       <th plain-text column-ids="name">Name</th>
+      </tr>
+     </thead>
+     <tbody></tbody>
+    </table>
+   </vaadin-grid>
+  </vaadin-vertical-layout>
+ </body>
+</html>

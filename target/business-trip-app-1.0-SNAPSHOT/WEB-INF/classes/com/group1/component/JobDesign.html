@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.0.5">
+ </head>
+ <body>
+  <vaadin-vertical-layout style-name="job-layout-footer" margin="false">
+   <vaadin-css-layout style-name="v-component-group">
+    <vaadin-button icon="fonticon://Vaadin-Icons/e69a" plain-text _id="removeJobBtn"></vaadin-button>
+    <vaadin-combo-box width="300px" data-item-type="com.group1.model.Job" _id="jobListCbo"></vaadin-combo-box>
+   </vaadin-css-layout>
+   <vaadin-horizontal-layout width="600px">
+    <vaadin-form-layout size-auto margin="false">
+     <vaadin-text-field icon="fonticon://Vaadin-Icons/e7a4" caption="Hạn mức" enabled="false" _id="limitCostTf"></vaadin-text-field>
+    </vaadin-form-layout>
+    <vaadin-form-layout size-auto margin="false">
+     <vaadin-text-field caption="x" placeholder="Số lượng" width="100px" _id="quantityTf"></vaadin-text-field>
+    </vaadin-form-layout>
+   </vaadin-horizontal-layout>
+   <vaadin-text-field icon="fonticon://Vaadin-Icons/e6b6" style-name="inline-icon" placeholder="Chi phí đề xuất
+" width="300px" _id="proposedCostTf"></vaadin-text-field>
+   <vaadin-horizontal-layout width="550px">
+    <vaadin-date-field placeholder="Ngày bắt đầu" width="250px" _id="startDateDf"></vaadin-date-field>
+    <vaadin-date-field placeholder="Ngày kết thức" width="250px" _id="endDateDf"></vaadin-date-field>
+   </vaadin-horizontal-layout>
+   <vaadin-button icon="fonticon://Vaadin-Icons/e633" style-name="button-dashing" width="200px" plain-text _id="addBillBtn">
+     Thêm hóa đơn 
+   </vaadin-button>
+   <vaadin-vertical-layout margin="false" _id="billLayout"></vaadin-vertical-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>
